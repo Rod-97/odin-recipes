@@ -1,0 +1,40 @@
+body {
+  background-color: rgb(245, 245, 215);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.recipes-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+
+.recipe-element {
+  border: 2px solid rgb(160, 191, 240);
+  border-radius: 10px;
+  padding: 10px;
+
+  &:hover {
+    background-color: rgb(230, 230, 200);
+  }
+}
+
+.recipe-element a {
+  text-decoration: none;
+}
+
+.recipe-element h2 {
+  text-align: center;
+}
+
+.recipe-img {
+  width: 300px;
+  height: 350px;
+  border-radius: 10px;
+}
