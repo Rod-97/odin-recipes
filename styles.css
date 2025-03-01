@@ -85,3 +85,31 @@ body {
 .recipe-page-container article h2 {
   color: var(--wine);
 }
+
+@media only screen and (max-width: 1200px) {
+  .recipes-list {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .recipe-element {
+    border: 1px solid var(--wine);
+  }
+
+  .recipe-element h2 {
+    width: 300px;
+  }
+
+  .recipe-element a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .recipe-img {
+    width: 250px;
+    height: 300px;
+  }
+}
