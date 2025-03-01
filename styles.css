@@ -1,5 +1,12 @@
+:root {
+  --bg-color: rgb(245, 245, 215);
+  --bg-color-hover: rgb(230, 230, 200);
+  --wine: rgba(116, 47, 55, 1);
+}
+
 body {
-  background-color: rgb(245, 245, 215);
+  background-color: var(--bg-color);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .title {
@@ -16,12 +23,12 @@ body {
 }
 
 .recipe-element {
-  border: 2px solid rgb(160, 191, 240);
   border-radius: 10px;
   padding: 10px;
+  background-color: white;
 
   &:hover {
-    background-color: rgb(230, 230, 200);
+    background-color: var(--bg-color-hover);
   }
 }
 
@@ -31,10 +38,50 @@ body {
 
 .recipe-element h2 {
   text-align: center;
+  color: var(--wine);
 }
 
 .recipe-img {
+  border: 2px solid rgb(160, 191, 240);
   width: 300px;
   height: 350px;
   border-radius: 10px;
+}
+
+.recipe-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.recipe-page-container header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.recipe-page-container header .home-link {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  margin-right: auto;
+
+  &:hover {
+    color: var(--wine);
+  }
+}
+
+.recipe-page-container article {
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid var(--wine);
+}
+
+.recipe-page-container article h2 {
+  color: var(--wine);
 }
